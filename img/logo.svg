@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 80" width="160" height="46">
+  <g fill="none">
+    <path d="M20 55 C20 30 45 15 55 35 C60 20 75 25 72 42 C85 35 90 55 70 58 C55 70 25 68 20 55Z" fill="#7BA55D"/>
+    <path d="M35 55 C40 40 55 38 58 52 C62 42 75 48 70 58 C55 70 30 68 35 55Z" fill="#4F5E99"/>
+    <circle cx="52" cy="32" r="6" fill="#fff"/>
+  </g>
+  <text x="95" y="48" font-family="Montserrat,Segoe UI,sans-serif" font-weight="700" font-size="22" fill="#4F5E99">Agne Bejeryte</text>
+</svg>

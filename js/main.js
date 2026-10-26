@@ -7,13 +7,12 @@ document.addEventListener('DOMContentLoaded', () => {
       toggle.setAttribute('aria-expanded', open);
     });
   }
-  const fab = document.getElementById('fab') || document.querySelector('.fab-wrap') || document.querySelector('.fab-container');
-  const fabMain = fab && (fab.querySelector('.fab-main') || fab.querySelector('button'));
+  const fab = document.getElementById('fab') || document.querySelector('.fab-wrap');
+  const fabMain = fab && fab.querySelector('.fab-main');
   if (fab && fabMain) {
     fabMain.addEventListener('click', () => {
       const open = fab.classList.toggle('open');
       fabMain.setAttribute('aria-expanded', open);
     });
   }
-  document.querySelectorAll('.faq-item summary, details.faq-item').forEach(() => {});
 });
