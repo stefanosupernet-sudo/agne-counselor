@@ -4,7 +4,24 @@
 <meta charset="utf-8">
 <meta http-equiv="Cache-Control" content="no-cache">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Coaching nutrizionale · Metodo MCS</title>
+<title>Coaching nutrizionale online · Metodo MCS | Agne Bejeryte</title>
+<meta name="description" content="Coaching nutrizionale online con Agne Bejeryte. Metodo MCS (Motivazione, Consapevolezza, Strategie) per fame emotiva, abitudini alimentari e cambiamenti sostenibili. Conversazione gratuita.">
+<meta name="keywords" content="coaching nutrizionale, coach nutrizionale, fame emotiva, Metodo MCS, Agne Bejeryte, abitudini alimentari">
+<meta name="author" content="Agne Bejeryte">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://stefanosupernet-sudo.github.io/agne-counselor/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="it_IT">
+<meta property="og:url" content="https://stefanosupernet-sudo.github.io/agne-counselor/">
+<meta property="og:title" content="Coaching nutrizionale · Metodo MCS | Agne Bejeryte">
+<meta property="og:description" content="Percorso di coaching nutrizionale per fame emotiva e abitudini alimentari. Motivazione, Consapevolezza, Strategie. Conversazione gratuita.">
+<meta property="og:image" content="https://stefanosupernet-sudo.github.io/agne-counselor/img/foto-agne.jpg">
+<meta property="og:image:alt" content="Agne Bejeryte, coach nutrizionale">
+<meta property="og:site_name" content="Agne Bejeryte – Coaching nutrizionale">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Coaching nutrizionale · Metodo MCS | Agne Bejeryte">
+<meta name="twitter:description" content="Percorso di coaching per fame emotiva e abitudini alimentari. Metodo MCS. Conversazione gratuita.">
+<meta name="twitter:image" content="https://stefanosupernet-sudo.github.io/agne-counselor/img/foto-agne.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
@@ -29,9 +46,9 @@ nav a:hover{color:var(--ink)}nav .btn{padding:10px 18px;color:#fff}
 @media(max-width:900px){nav a:not(.btn){display:none}}
 .hero{padding:44px 0 80px;background:linear-gradient(165deg,var(--tint),var(--bg) 70%)}
 .hero .wrap{display:grid;grid-template-columns:1.2fr .8fr;gap:56px;align-items:center}
-.hero h1{margin-bottom:.5em}
 .chips{list-style:none;display:flex;flex-wrap:wrap;gap:8px;padding:0;margin:0 0 22px}
-.chips li{background:var(--peach);font-weight:600;font-size:.88rem;padding:7px 14px;border-radius:999px}
+.chips li{background:var(--peach);font-weight:600;font-size:.88rem;padding:7px 14px;border-radius:999px;transition:transform .2s}
+.chips li:hover{transform:translateY(-2px) scale(1.03)}
 .tag{font-family:var(--head);font-weight:600;color:var(--green-d);font-size:1.1rem;line-height:1.45;border-left:4px solid var(--green);padding-left:16px;margin:24px 0}
 .photo{position:relative;border-radius:22px;aspect-ratio:4/5;isolation:isolate}
 .photo::before{content:"";position:absolute;inset:18px -18px -18px 18px;border-radius:22px;background:var(--green);z-index:-1}
@@ -42,8 +59,7 @@ nav a:hover{color:var(--ink)}nav .btn{padding:10px 18px;color:#fff}
 .card{background:var(--bg);border:1px solid var(--line);border-radius:18px;padding:24px;transition:transform .22s ease,box-shadow .22s ease}
 .card:hover{transform:translateY(-4px);box-shadow:0 12px 28px rgba(52,66,143,.12)}
 .card h3{margin-bottom:.45em}.card p{margin:0;color:var(--muted);font-size:.98rem}
-.grid .card:nth-child(odd){border-top:4px solid var(--green)}
-.grid .card:nth-child(even){border-top:4px solid var(--indigo)}
+.grid .card:nth-child(odd){border-top:4px solid var(--green)}.grid .card:nth-child(even){border-top:4px solid var(--indigo)}
 .lead2{margin-top:36px;font-weight:600}
 .statement{background:var(--navy);color:#fff}.statement h2{color:#fff;max-width:20em;margin-inline:auto}
 .two{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:32px}.two .card{background:var(--surface);padding:28px}
@@ -53,7 +69,7 @@ nav a:hover{color:var(--ink)}nav .btn{padding:10px 18px;color:#fff}
 .mcs article:hover{transform:translateY(-3px);box-shadow:0 10px 24px rgba(52,66,143,.1)}
 .letter{width:60px;height:60px;border-radius:16px;display:grid;place-items:center;font:700 1.9rem var(--head);color:#fff;background:var(--indigo)}
 .mcs article:nth-child(2) .letter{background:var(--green-d)}.mcs article:nth-child(3) .letter{background:#e07a4f}
-.sub{font-weight:700;color:var(--muted);margin-bottom:.5em!important}.mcs p:last-child{margin:0}
+.sub{font-weight:700;color:var(--muted);margin-bottom:.5em!important}
 @media(max-width:560px){.mcs article{grid-template-columns:1fr;gap:12px}}
 .steps{list-style:none;margin:32px auto 0;padding:0;max-width:680px;counter-reset:s}
 .steps li{position:relative;padding:0 0 28px 62px;counter-increment:s}
@@ -61,20 +77,96 @@ nav a:hover{color:var(--ink)}nav .btn{padding:10px 18px;color:#fff}
 .steps li::after{content:"";position:absolute;left:20px;top:48px;bottom:4px;width:2px;background:var(--line)}
 .steps li:last-child::after{display:none}.steps h3{margin-bottom:.2em}.steps p{margin:0;color:var(--muted)}
 .contact{background:#3a7529;color:#fff;border-radius:28px;padding:52px 28px;text-align:center}
-.contact h2{color:#fff}.contact p{margin:0 auto 1.1em;color:#eaf5e4}
-.contact .btn{background:#fff;color:#2d5e20}
+.contact h2{color:#fff}.contact p{margin:0 auto 1.1em;color:#eaf5e4}.contact .btn{background:#fff;color:#2d5e20}
 .note{font-size:.9rem;color:var(--muted);border-top:1px solid var(--line);margin-top:40px;padding-top:20px}
 .note p{max-width:80ch;margin-inline:auto;text-align:left!important}
 footer{padding:26px 0 34px;border-top:1px solid var(--line);color:var(--muted);font-size:.9rem}
 footer .wrap{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px}
 footer .logo{height:30px}footer a{color:var(--indigo);font-weight:600}
 @media(max-width:720px){.two{grid-template-columns:1fr}}
-.chips li{transition:transform .2s}.chips li:hover{transform:translateY(-2px) scale(1.03)}
+details.faq-item summary::-webkit-details-marker{display:none}
+details.faq-item summary::after{content:"+";float:right;color:var(--indigo);font-weight:700}
+details.faq-item[open] summary::after{content:"–"}
 </style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://stefanosupernet-sudo.github.io/agne-counselor/#website",
+      "url": "https://stefanosupernet-sudo.github.io/agne-counselor/",
+      "name": "Agne Bejeryte – Coaching nutrizionale · Metodo MCS",
+      "description": "Coaching nutrizionale online con il Metodo MCS per fame emotiva e cambiamento delle abitudini alimentari.",
+      "inLanguage": "it-IT",
+      "publisher": { "@id": "https://stefanosupernet-sudo.github.io/agne-counselor/#person" }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://stefanosupernet-sudo.github.io/agne-counselor/#person",
+      "name": "Agne Bejeryte",
+      "jobTitle": "Coach nutrizionale",
+      "description": "Coach nutrizionale che accompagna le persone a modificare i comportamenti alimentari attraverso il Metodo MCS: Motivazione, Consapevolezza e Strategie.",
+      "url": "https://stefanosupernet-sudo.github.io/agne-counselor/",
+      "image": "https://stefanosupernet-sudo.github.io/agne-counselor/img/foto-agne.jpg",
+      "telephone": "+39-346-393-4678"
+    },
+    {
+      "@type": "ProfessionalService",
+      "@id": "https://stefanosupernet-sudo.github.io/agne-counselor/#service",
+      "name": "Coaching nutrizionale – Metodo MCS",
+      "description": "Percorso di coaching comportamentale alimentare online. Focus su fame emotiva, abitudini automatiche, motivazione e strategie concrete. Non sostituisce valutazione medica o dietologica.",
+      "url": "https://stefanosupernet-sudo.github.io/agne-counselor/",
+      "provider": { "@id": "https://stefanosupernet-sudo.github.io/agne-counselor/#person" },
+      "areaServed": "IT",
+      "availableLanguage": ["it"],
+      "telephone": "+39-346-393-4678",
+      "serviceType": "Coaching nutrizionale"
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Che differenza c'è tra nutrizionista e coach nutrizionale?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Il nutrizionista o dietista valuta lo stato nutrizionale e può prescrivere piani alimentari personalizzati. Il coach nutrizionale lavora sul cambiamento dei comportamenti e sugli ostacoli che rendono difficile mettere in pratica le intenzioni. Non sostituisce il professionista sanitario."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Che cos'è il Metodo MCS?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "MCS significa Motivazione, Consapevolezza e Strategie. È l'approccio di Agne Bejeryte: chiarire perché vuoi cambiare, riconoscere cosa influenza le abitudini e tradurre tutto in azioni concrete."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Il coaching nutrizionale prevede una dieta?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Non vengono prescritti piani alimentari personalizzati. Il focus è su comportamenti, motivazione e strategie praticabili nella quotidianità."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Come posso contattare Agne Bejeryte?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Puoi chiamare o scrivere su WhatsApp al numero +39 346 393 4678 per una prima conversazione gratuita, senza impegno."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
 </head>
 <body id="top">
 <header><div class="wrap">
-<a href="https://stefanosupernet-sudo.github.io/agne-counselor/" aria-label="Torna alla home"><img class="logo" src="img/logo.svg" alt="Agne Bejeryte" onerror="this.style.display='none'"></a>
+<a href="https://stefanosupernet-sudo.github.io/agne-counselor/" aria-label="Torna alla home"><img class="logo" src="img/logo.svg" alt="Logo Agne Bejeryte - Coach Nutrizionale" onerror="this.style.display='none'"></a>
 <nav aria-label="Principale">
 <a href="#problema">Ti riconosci?</a>
 <a href="#aiuto">Nutrizionista o coach</a>
@@ -97,10 +189,11 @@ footer .logo{height:30px}footer a{color:var(--indigo);font-weight:600}
 </ul>
 <p>Sono una Coach Nutrizionale e ti accompagno a comprendere e modificare i comportamenti alimentari che vorresti cambiare, per costruire abitudini più consapevoli e sostenibili. Non con regole sempre più rigide, ma lavorando su motivazione, consapevolezza e strategie concrete.</p>
 <p class="tag">Il cambiamento non comincia dall'ennesima regola. Comincia dal capire che cosa ti impedisce di cambiare.</p>
+<p style="margin-top:1em;font-size:.95rem;color:var(--muted)">Lavoro come <strong>coach nutrizionale</strong> con un approccio comportamentale orientato alla consapevolezza e alle strategie praticabili nella quotidianità — non alla prescrizione di diete cliniche. Il percorso è pensato per chi sente di “sapere già cosa fare” ma fatica a tradurlo in abitudini stabili.</p>
 <a class="btn" href="https://wa.me/393463934678?text=Ciao%2C%20vorrei%20una%20prima%20conversazione%20gratuita" target="_blank" rel="noopener">Prima conversazione gratuita</a>
 </div>
 <div class="photo">
-<img src="img/foto-agne.jpg" alt="Agne Bejeryte, coach nutrizionale" width="900" height="1200" loading="eager" onerror="this.parentElement.style.opacity='0.3'">
+<img src="img/foto-agne.jpg" alt="Agne Bejeryte, coach nutrizionale – Metodo MCS" width="900" height="1200" loading="eager" onerror="this.parentElement.style.opacity='0.3'">
 </div>
 </div></section>
 
@@ -152,6 +245,31 @@ footer .logo{height:30px}footer a{color:var(--indigo);font-weight:600}
 </ol>
 </div></section>
 
+<section id="faq-home" class="band" aria-labelledby="faq-home-title">
+<div class="wrap">
+<h2 id="faq-home-title">Domande frequenti</h2>
+<p>Risposte brevi alle domande più comuni. Per approfondire vai alla <a href="faq.html" style="font-weight:700;color:var(--indigo)">pagina FAQ completa</a>.</p>
+<div style="max-width:720px;margin:28px auto 0;text-align:left">
+<details class="faq-item" style="background:var(--surface);border:1px solid var(--line);border-radius:14px;margin-bottom:10px">
+<summary style="cursor:pointer;padding:16px 18px;font-weight:700;font-family:var(--head);list-style:none">Che differenza c'è tra nutrizionista e coach nutrizionale?</summary>
+<div style="padding:0 18px 16px;color:var(--muted)"><p>Il nutrizionista può prescrivere piani alimentari. Il coach lavora sul cambiamento dei comportamenti e sugli ostacoli pratici. Non sostituisce il professionista sanitario.</p></div>
+</details>
+<details class="faq-item" style="background:var(--surface);border:1px solid var(--line);border-radius:14px;margin-bottom:10px">
+<summary style="cursor:pointer;padding:16px 18px;font-weight:700;font-family:var(--head);list-style:none">Che cos'è il Metodo MCS?</summary>
+<div style="padding:0 18px 16px;color:var(--muted)"><p>Motivazione, Consapevolezza e Strategie: l'approccio per chiarire il perché del cambiamento, riconoscere gli automatismi e costruire azioni realistiche.</p></div>
+</details>
+<details class="faq-item" style="background:var(--surface);border:1px solid var(--line);border-radius:14px;margin-bottom:10px">
+<summary style="cursor:pointer;padding:16px 18px;font-weight:700;font-family:var(--head);list-style:none">Il percorso prevede una dieta?</summary>
+<div style="padding:0 18px 16px;color:var(--muted)"><p>No. Non si prescrivono diete personalizzate: si lavora su motivazione, abitudini e strategie nella vita reale.</p></div>
+</details>
+<details class="faq-item" style="background:var(--surface);border:1px solid var(--line);border-radius:14px;margin-bottom:10px">
+<summary style="cursor:pointer;padding:16px 18px;font-weight:700;font-family:var(--head);list-style:none">Come posso contattarti?</summary>
+<div style="padding:0 18px 16px;color:var(--muted)"><p>Telefono o WhatsApp: <a href="tel:+393463934678">+39 346 393 4678</a>. La prima conversazione è gratuita e senza impegno.</p></div>
+</details>
+</div>
+</div>
+</section>
+
 <section id="contatti" style="padding-top:0"><div class="wrap">
 <div class="contact">
 <h2>E se fosse il momento di smettere di ricominciare?</h2>
@@ -166,7 +284,7 @@ footer .logo{height:30px}footer a{color:var(--indigo);font-weight:600}
 </main>
 
 <footer><div class="wrap">
-<a href="https://stefanosupernet-sudo.github.io/agne-counselor/" aria-label="Torna alla home"><img class="logo" src="img/logo.svg" alt="Logo"></a>
+<a href="https://stefanosupernet-sudo.github.io/agne-counselor/" aria-label="Torna alla home"><img class="logo" src="img/logo.svg" alt="Logo Agne Bejeryte - Coach Nutrizionale"></a>
 <span>Coaching nutrizionale · Metodo MCS · <a href="tel:+393463934678">+39 346 393 4678</a> · <a href="https://wa.me/393463934678" target="_blank" rel="noopener">WhatsApp</a></span>
 </div></footer>
 </body>
