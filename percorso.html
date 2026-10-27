@@ -6,43 +6,46 @@
 <title>Come funziona il percorso | Agne Bejeryte</title>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
+<style>
+.fab-wrap{position:fixed;right:18px;bottom:calc(18px + env(safe-area-inset-bottom,0px));z-index:60;display:flex;flex-direction:column;align-items:flex-end;gap:10px}
+.fab-opts{display:none;flex-direction:column;align-items:flex-end;gap:8px}.fab-wrap.open .fab-opts{display:flex}
+.fab-opts a{display:flex;align-items:center;gap:10px;background:#fff;color:#1d2342;text-decoration:none;font-weight:700;font-size:.9rem;padding:12px 16px;border-radius:999px;box-shadow:0 6px 20px rgba(0,0,0,.15)}
+.fab-main{width:58px;height:58px;border-radius:50%;border:none;background:#34428f;color:#fff;cursor:pointer;box-shadow:0 8px 24px rgba(52,66,143,.4);font-size:1.4rem}
+.fab-wrap.open .fab-main{background:#3a7529}
+</style>
 </head>
 <body>
 <header><div class="wrap">
-<a href="https://stefanosupernet-sudo.github.io/agne-counselor/" aria-label="Torna alla home"><img class="logo" src="img/logo.svg" alt="Agne Bejeryte"></a>
+<a href="https://stefanosupernet-sudo.github.io/agne-counselor/" aria-label="Torna alla home"><img class="logo" src="img/logo.svg" alt="Logo Agne Bejeryte - Coach Nutrizionale"></a>
 <nav class="main-nav">
 <a href="https://stefanosupernet-sudo.github.io/agne-counselor/">Home</a>
 <a href="coaching.html">Coaching</a>
 <a href="metodo-mcs.html">Metodo MCS</a>
 <a href="percorso.html">Il percorso</a>
 <a href="faq.html">FAQ</a>
-<a class="btn" href="https://wa.me/393463934678?text=Ciao%2C%20vorrei%20una%20prima%20conversazione%20gratuita" target="_blank" rel="noopener">Prima conversazione gratuita</a>
+<a class="btn" href="https://wa.me/393463934678" target="_blank" rel="noopener">Prima conversazione gratuita</a>
 </nav></div></header>
 <main>
 <section class="page-hero"><div class="wrap">
-<p class="breadcrumb"><a href="https://stefanosupernet-sudo.github.io/agne-counselor/">Home</a> · Come funziona</p>
+<p class="breadcrumb"><a href="https://stefanosupernet-sudo.github.io/agne-counselor/">Home</a> · Percorso</p>
 <h1>Come funziona il percorso</h1>
 </div></section>
 <section><div class="wrap">
 <ol class="steps">
 <li><h3>Colloquio gratuito</h3><p><a href="tel:+393463934678">+39 346 393 4678</a></p></li>
-<li><h3>Raccolta informazioni</h3><p>Abitudini, ostacoli e obiettivi.</p></li>
-<li><h3>Il primo incontro</h3><p>Aree di lavoro senza diete prescritte.</p></li>
-<li><h3>Incontri successivi</h3><p>Strategie pratiche adattate a te.</p></li>
+<li><h3>Raccolta informazioni</h3><p>Abitudini e obiettivi.</p></li>
+<li><h3>Incontri</h3><p>Strategie pratiche adattate a te.</p></li>
 </ol>
-</div></section>
-<section class="band" id="contatti"><div class="wrap">
-<div class="contact">
-<h2>Conversazione gratuita</h2>
-<p><strong>+39 346 393 4678</strong></p>
-<a class="btn" href="https://wa.me/393463934678?text=Ciao%2C%20vorrei%20una%20prima%20conversazione%20gratuita" target="_blank" rel="noopener">WhatsApp</a>
-&nbsp; <a class="btn" href="https://stefanosupernet-sudo.github.io/agne-counselor/" style="background:#fff;color:#2d5e20">Torna alla home</a>
-</div>
+<p style="text-align:center;margin-top:28px"><a class="btn" href="https://stefanosupernet-sudo.github.io/agne-counselor/">Torna alla home</a></p>
 </div></section>
 </main>
-<footer><div class="wrap footer-grid">
-<div><a href="https://stefanosupernet-sudo.github.io/agne-counselor/"><img class="logo" src="img/logo.svg" alt="Agne Bejeryte"></a></div>
-<div><h4>Contatti</h4><ul><li><a href="tel:+393463934678">+39 346 393 4678</a></li></ul></div>
-</div></footer>
-<script src="js/main.js"></script>
+<footer><div class="wrap"><a href="https://stefanosupernet-sudo.github.io/agne-counselor/"><img class="logo" src="img/logo.svg" alt="Logo Agne Bejeryte - Coach Nutrizionale"></a></div></footer>
+<div class="fab-wrap" id="fab-contatti">
+  <div class="fab-opts">
+    <a class="fab-tel" href="tel:+393463934678">📞 Chiama</a>
+    <a class="fab-wa" href="https://wa.me/393463934678" target="_blank" rel="noopener">💬 WhatsApp</a>
+  </div>
+  <button type="button" class="fab-main" aria-label="Apri contatti" aria-expanded="false">📞</button>
+</div>
+<script>(function(){var fab=document.getElementById('fab-contatti');if(!fab)return;var btn=fab.querySelector('.fab-main');btn.addEventListener('click',function(e){e.stopPropagation();var open=fab.classList.toggle('open');btn.setAttribute('aria-expanded',open?'true':'false');});document.addEventListener('click',function(e){if(!fab.contains(e.target)){fab.classList.remove('open');btn.setAttribute('aria-expanded','false');}});})();</script>
 </body></html>
