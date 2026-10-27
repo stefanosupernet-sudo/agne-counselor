@@ -8,9 +8,9 @@
 <link rel="canonical" href="https://stefanosupernet-sudo.github.io/agne-counselor/faq.html">
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#fbfaf6;--surface:#fff;--ink:#1d2342;--muted:#555c78;--indigo:#34428f;--green:#5f9a45;--green-d:#3e7a2c;--tint:#eceffa;--sage:#e8f3e1;--peach:#fde6d8;--line:#e2e1da;--navy:#222c6b;--head:'Montserrat',system-ui,sans-serif;--body:'Open Sans',system-ui,sans-serif}
+:root{--bg:#fbfaf6;--surface:#fff;--ink:#1d2342;--muted:#555c78;--indigo:#34428f;--green:#5f9a45;--green-d:#3e7a2c;--tint:#eceffa;--sage:#e8f3e1;--line:#e2e1da;--head:'Montserrat',system-ui,sans-serif;--body:'Open Sans',system-ui,sans-serif}
 *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:400 1.04rem/1.7 var(--body)}
-img{max-width:100%;display:block}h1,h2,h3{font-family:var(--head);font-weight:700;line-height:1.25;margin:0 0 .5em}
+img{max-width:100%;display:block}h1,h2{font-family:var(--head);font-weight:700;line-height:1.25;margin:0 0 .5em}
 h1{font-size:clamp(1.7rem,4vw,2.4rem)}h2.faq-cat{font-size:1.25rem;color:var(--indigo);margin:40px 0 16px;padding-bottom:8px;border-bottom:2px solid var(--sage)}
 .wrap{max-width:800px;margin:0 auto;padding:0 22px}
 .btn{display:inline-block;background:#34428f;color:#fff;text-decoration:none;font-weight:700;padding:12px 22px;border-radius:999px}
@@ -27,8 +27,7 @@ details.faq-item summary{cursor:pointer;padding:16px 18px;font-weight:700;list-s
 details.faq-item summary::-webkit-details-marker{display:none}
 details.faq-item summary::after{content:"+";position:absolute;right:18px;top:50%;transform:translateY(-50%);color:var(--indigo);font-size:1.2rem}
 details.faq-item[open] summary::after{content:"–"}
-.faq-a{padding:0 18px 16px;color:var(--muted)}
-.faq-a p{margin:0}
+.faq-a{padding:0 18px 16px;color:var(--muted)}.faq-a p{margin:0}
 .toc{display:flex;flex-wrap:wrap;gap:8px;margin:20px 0 8px}
 .toc a{font-size:.85rem;background:var(--sage);color:var(--green-d);text-decoration:none;font-weight:600;padding:6px 12px;border-radius:999px}
 footer{padding:26px 0 34px;border-top:1px solid var(--line);color:var(--muted);font-size:.9rem;margin-top:48px}
@@ -36,7 +35,7 @@ footer .wrap{display:flex;align-items:center;justify-content:space-between;flex-
 footer .logo{height:30px}footer a{color:var(--indigo);font-weight:600}
 .social{display:flex;gap:12px}.social-link{display:inline-flex;align-items:center;justify-content:center;width:40px;height:40px;border-radius:50%;background:var(--tint);color:var(--indigo);text-decoration:none}
 .social-link:hover{background:var(--indigo);color:#fff}
-section.main{padding:20px 0 40px}
+section.main{padding:20px 0 40px}#faq-root{min-height:200px}
 </style>
 </head>
 <body>
@@ -56,21 +55,43 @@ section.main{padding:20px 0 40px}
 <p>Risposte complete su fame emotiva, diete, coaching nutrizionale, Metodo MCS, percorso e consulenze online.</p>
 </div></section>
 <section class="main"><div class="wrap">
-<nav class="toc" aria-label="Argomenti FAQ">
-<a href="#fame-emotiva-e-il-rapporto-con-il-cibo">Fame emotiva e il rapporto con il cibo</a>
-<a href="#diete-dimagrimento-e-difficolt-a-mantene">Diete, dimagrimento e difficoltà a mantenere i risultati</a>
-<a href="#il-coaching-nutrizionale-e-a-chi--rivolto">Il coaching nutrizionale e a chi è rivolto il percorso</a>
-<a href="#il-metodo-mcs">Il Metodo MCS</a>
-<a href="#differenze-e-limiti-professionali">Differenze e limiti professionali</a>
-<a href="#il-percorso-di-coaching-e-la-durata">Il percorso di coaching e la durata</a>
-<a href="#consulenze-online-prenotazioni-e-pagamenti">Consulenze online, prenotazioni e pagamenti</a>
-</nav>
-SEE_FILE_FOR_BODY
+<div id="faq-root"><p>Caricamento delle domande…</p></div>
+<p style="text-align:center;margin-top:40px">
+<a class="btn" href="https://wa.me/393463934678?text=Ciao%2C%20vorrei%20una%20prima%20conversazione%20gratuita" target="_blank" rel="noopener">Scrivi su WhatsApp</a>
+&nbsp; <a class="btn" href="https://stefanosupernet-sudo.github.io/agne-counselor/" style="background:var(--green)">Torna alla home</a>
+</p>
 </div></section>
 </main>
 <footer><div class="wrap">
 <a href="https://stefanosupernet-sudo.github.io/agne-counselor/" aria-label="Home"><img class="logo" src="img/logo%20web%20nuovo.png" alt="Logo Agne Bejeryte - Coach Nutrizionale" width="96" height="30"></a>
 <span>Coaching nutrizionale · Metodo MCS · <a href="https://wa.me/393463934678" target="_blank" rel="noopener">+39 346 393 4678</a></span>
+<div class="social" aria-label="Social">
+<a class="social-link" href="https://www.facebook.com/counselingnaturopatico/" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M24 12.07C24 5.41 18.63 0 12 0S0 5.41 0 12.07C0 18.1 4.39 23.1 10.13 24v-8.44H7.08v-3.49h3.04V9.41c0-3.02 1.8-4.7 4.54-4.7 1.31 0 2.68.24 2.68.24v2.97h-1.5c-1.5 0-1.96.93-1.96 1.89v2.26h3.32l-.53 3.49h-2.79V24C19.62 23.1 24 18.1 24 12.07z"/></svg></a>
+<a class="social-link" href="https://www.instagram.com/agne.counseling_nutrizionale/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M12 2.16c3.2 0 3.58.01 4.85.07 3.25.15 4.77 1.69 4.92 4.92.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.15 3.23-1.66 4.77-4.92 4.92-1.27.06-1.64.07-4.85.07s-3.58-.01-4.85-.07c-3.26-.15-4.77-1.7-4.92-4.92-.06-1.27-.07-1.64-.07-4.85s.01-3.58.07-4.85C2.38 3.92 3.9 2.38 7.15 2.23 8.42 2.17 8.8 2.16 12 2.16M12 0C8.74 0 8.33.01 7.05.07 2.7.27.27 2.69.07 7.05.01 8.33 0 8.74 0 12s.01 3.67.07 4.95c.2 4.36 2.62 6.78 6.98 6.98C8.33 23.99 8.74 24 12 24s3.67-.01 4.95-.07c4.35-.2 6.78-2.62 6.98-6.98.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95C23.73 2.7 21.31.27 16.95.07 15.67.01 15.26 0 12 0zm0 5.84a6.16 6.16 0 100 12.32 6.16 6.16 0 000-12.32zM12 16a4 4 0 110-8 4 4 0 010 8zm6.41-10.85a1.44 1.44 0 11-2.88 0 1.44 1.44 0 012.88 0z"/></svg></a>
+</div>
 </div></footer>
+<script>
+(function(){
+  function esc(s){return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
+  function slug(t){return t.toLowerCase().replace(/[^a-z0-9àèéìòù]+/gi,'-').replace(/^-|-$/g,'').slice(0,48);}
+  fetch('faq-data.json').then(function(r){return r.json();}).then(function(data){
+    var root=document.getElementById('faq-root');
+    var toc='<nav class="toc" aria-label="Argomenti FAQ">';
+    var body='';
+    (data.sections||[]).forEach(function(sec){
+      var id=slug(sec.title);
+      toc+='<a href="#'+id+'">'+esc(sec.title)+'</a>';
+      body+='<h2 class="faq-cat" id="'+id+'">'+esc(sec.title)+'</h2>';
+      (sec.items||[]).forEach(function(it){
+        body+='<details class="faq-item"><summary>'+esc(it.q)+'</summary><div class="faq-a"><p>'+esc(it.a)+'</p></div></details>';
+      });
+    });
+    toc+='</nav>';
+    root.innerHTML=toc+body;
+  }).catch(function(){
+    document.getElementById('faq-root').innerHTML='<p>Impossibile caricare le FAQ. <a href="https://wa.me/393463934678">Contattami su WhatsApp</a>.</p>';
+  });
+})();
+</script>
 </body>
 </html>
