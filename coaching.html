@@ -6,22 +6,11 @@
 <title>Che cos'è il coaching nutrizionale | Agne Bejeryte</title>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
-<style>
-.fab-wrap{position:fixed;right:18px;bottom:calc(18px + env(safe-area-inset-bottom,0px));z-index:60;display:flex;flex-direction:column;align-items:flex-end;gap:10px}
-.fab-opts{display:none;flex-direction:column;align-items:flex-end;gap:8px}
-.fab-wrap.open .fab-opts{display:flex}
-.fab-opts a{display:flex;align-items:center;gap:10px;background:#fff;color:#1d2342;text-decoration:none;font-weight:700;font-size:.9rem;padding:12px 16px;border-radius:999px;box-shadow:0 6px 20px rgba(0,0,0,.15);border:1px solid #e2e1da}
-.fab-opts a .fab-ico{width:28px;height:28px;border-radius:50%;display:grid;place-items:center}
-.fab-opts a.fab-tel .fab-ico{background:#34428f;color:#fff}
-.fab-opts a.fab-wa .fab-ico{background:#25D366;color:#fff}
-.fab-main{width:58px;height:58px;border-radius:50%;border:none;background:#34428f;color:#fff;cursor:pointer;box-shadow:0 8px 24px rgba(52,66,143,.4);display:grid;place-items:center}
-.fab-wrap.open .fab-main{background:#3a7529}
-.fab-main svg{width:26px;height:26px;fill:currentColor}
-</style>
+<style>.logo{height:40px;width:auto;object-fit:contain}footer .logo{height:30px}</style>
 </head>
 <body>
 <header><div class="wrap">
-<a href="https://stefanosupernet-sudo.github.io/agne-counselor/" aria-label="Torna alla home"><img class="logo" src="img/logo.svg" alt="Logo Agne Bejeryte - Coach Nutrizionale"></a>
+<a href="https://stefanosupernet-sudo.github.io/agne-counselor/" aria-label="Torna alla home"><img class="logo" src="img/logo%20web%20nuovo.png" alt="Logo Agne Bejeryte - Coach Nutrizionale" width="128" height="40"></a>
 <nav class="main-nav">
 <a href="https://stefanosupernet-sudo.github.io/agne-counselor/">Home</a>
 <a href="coaching.html">Coaching</a>
@@ -32,24 +21,35 @@
 </nav></div></header>
 <main>
 <section class="page-hero"><div class="wrap">
-<p class="breadcrumb"><a href="https://stefanosupernet-sudo.github.io/agne-counselor/">Home</a> · Coaching</p>
+<p class="breadcrumb"><a href="https://stefanosupernet-sudo.github.io/agne-counselor/">Home</a> · Coaching nutrizionale</p>
 <h1>Che cos'è il coaching nutrizionale</h1>
-<p>Un percorso dedicato al cambiamento dei comportamenti alimentari.</p>
+<p>Un percorso dedicato al cambiamento dei comportamenti alimentari, non alla semplice consegna di una lista di alimenti.</p>
 </div></section>
-<section><div class="wrap">
+<section><div class="wrap prose">
 <p>Il coaching si concentra su <strong>comprendere cosa ostacola il cambiamento</strong> e sviluppare strategie utilizzabili nella vita quotidiana.</p>
-<p style="text-align:center;margin-top:28px"><a class="btn" href="https://stefanosupernet-sudo.github.io/agne-counselor/">Torna alla home</a></p>
+</div></section>
+<section class="band"><div class="wrap">
+<div class="grid">
+<article class="card"><h3>Fame emotiva</h3><p>Mangi anche quando non hai fame fisica.</p></article>
+<article class="card"><h3>Abitudini che tornano</h3><p>Le vecchie abitudini riemergono dopo periodi di impegno.</p></article>
+<article class="card"><h3>Sensi di colpa</h3><p>Uno sgarro basta a farti sentire in errore.</p></article>
+<article class="card"><h3>Motivazione che cala</h3><p>Difficoltà a mantenere i cambiamenti nel tempo.</p></article>
+</div>
+<p style="text-align:center;margin-top:28px"><a class="btn" href="percorso.html">Conversazione gratuita</a>
+&nbsp; <a class="btn" href="https://stefanosupernet-sudo.github.io/agne-counselor/" style="background:var(--green)">Torna alla home</a></p>
 </div></section>
 </main>
-<footer><div class="wrap"><a href="https://stefanosupernet-sudo.github.io/agne-counselor/"><img class="logo" src="img/logo.svg" alt="Logo Agne Bejeryte - Coach Nutrizionale"></a></div></footer>
-<div class="fab-wrap" id="fab-contatti">
-  <div class="fab-opts">
-    <a class="fab-tel" href="tel:+393463934678" aria-label="Chiama"><span class="fab-ico">📞</span> Chiama</a>
-    <a class="fab-wa" href="https://wa.me/393463934678" target="_blank" rel="noopener" aria-label="WhatsApp"><span class="fab-ico">💬</span> WhatsApp</a>
-  </div>
-  <button type="button" class="fab-main" aria-label="Apri contatti" aria-expanded="false">📞</button>
-</div>
-<script>
-(function(){var fab=document.getElementById('fab-contatti');if(!fab)return;var btn=fab.querySelector('.fab-main');btn.addEventListener('click',function(e){e.stopPropagation();var open=fab.classList.toggle('open');btn.setAttribute('aria-expanded',open?'true':'false');});document.addEventListener('click',function(e){if(!fab.contains(e.target)){fab.classList.remove('open');btn.setAttribute('aria-expanded','false');}});})();
-</script>
+<footer><div class="wrap footer-grid">
+<div><a href="https://stefanosupernet-sudo.github.io/agne-counselor/" aria-label="Home"><img class="logo" src="img/logo%20web%20nuovo.png" alt="Logo Agne Bejeryte - Coach Nutrizionale" width="96" height="30"></a></div>
+<div><h4>Pagine</h4><ul>
+<li><a href="https://stefanosupernet-sudo.github.io/agne-counselor/">Home</a></li>
+<li><a href="coaching.html">Coaching</a></li>
+<li><a href="metodo-mcs.html">Metodo MCS</a></li>
+<li><a href="faq.html">FAQ</a></li>
+</ul></div>
+<div><h4>Contatti</h4><ul>
+<li><a href="https://wa.me/393463934678" target="_blank" rel="noopener">WhatsApp +39 346 393 4678</a></li>
+</ul></div>
+</div></footer>
+<script src="js/main.js"></script>
 </body></html>
