@@ -74,7 +74,7 @@ details.faq-item summary{cursor:pointer;padding:16px 18px;font-weight:700;list-s
 .reviews-cta{text-align:center;margin-top:28px}
 .reviews-cta a.btn-outline{display:inline-block;border:2px solid var(--indigo);color:var(--indigo);background:transparent;text-decoration:none;font-weight:700;padding:12px 22px;border-radius:999px}
 .reviews-cta a.btn-outline:hover{background:var(--indigo);color:#fff}
-.ti-widget-slot{width:100%;max-width:100%;overflow:hidden}
+.ti-widget-slot{width:100%;max-width:100%;overflow:hidden;min-height:120px}
 .ti-widget-slot iframe{max-width:100%}
 </style>
 </head>
@@ -140,16 +140,8 @@ details.faq-item summary{cursor:pointer;padding:16px 18px;font-weight:700;list-s
 <h2 id="recensioni-title">Dicono di noi</h2>
 <p>Le esperienze di chi ha seguito un percorso di coaching nutrizionale. Le recensioni arrivano dalla scheda Google e si aggiornano in automatico.</p>
 
-<!-- Slot Trustindex: incolla qui il codice embed del piano free -->
-<div id="trustindex-widget" class="ti-widget-slot" style="margin-top:28px;min-height:120px">
-  <div class="reviews-grid">
-    <article class="review-card">
-      <div class="stars" aria-hidden="true">★★★★★</div>
-      <p>Tra poco qui compariranno le recensioni Google aggiornate automaticamente (widget Trustindex).</p>
-      <p class="who">Google Reviews</p>
-      <p class="src">In attesa del codice embed</p>
-    </article>
-  </div>
+<div id="trustindex-widget" class="ti-widget-slot">
+<script defer async src="https://cdn.trustindex.io/loader.js?c4f922a84fb546702d16f814df3"></script>
 </div>
 
 <div class="reviews-cta">
