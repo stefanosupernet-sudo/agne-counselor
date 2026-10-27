@@ -45,7 +45,6 @@ nav a{text-decoration:none;font-weight:600;font-size:.9rem;color:var(--muted)}na
 footer{padding:26px 0 34px;border-top:1px solid var(--line);color:var(--muted);font-size:.9rem}
 footer .wrap{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px}
 footer .logo{height:30px}footer a{color:var(--indigo);font-weight:600}
-.social{display:flex;gap:12px}.social-link{display:inline-flex;align-items:center;justify-content:center;width:40px;height:40px;border-radius:50%;background:var(--tint);color:var(--indigo);text-decoration:none}
 section.main{padding:12px 0 40px}
 </style>
 </head>
@@ -97,16 +96,19 @@ section.main{padding:12px 0 40px}
 (function(){
   function esc(s){return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
   var grid=document.getElementById('att-grid');
-  var files=['data/attestati-0.json','data/attestati-1.json','data/attestati-2.json','data/attestati-3.json'];
-  Promise.all(files.map(function(f){return fetch(f).then(function(r){return r.json();});}))
-    .then(function(chunks){
-      var items=[].concat.apply([], chunks);
-      grid.innerHTML=items.map(function(it){
-        var src='data:image/webp;base64,'+it.img;
-        return '<article class="att-card" data-full="'+src+'"><button type="button" class="att-open" aria-label="Apri '+esc(it.title)+'"><img src="'+src+'" alt="'+esc(it.alt)+'" width="420" height="297" loading="lazy"><span class="att-meta"><strong>'+esc(it.title)+'</strong><em>'+esc(it.date)+'</em></span></button></article>';
-      }).join('');
-    })
-    .catch(function(){ grid.innerHTML='<p>Impossibile caricare gli attestati.</p>'; });
+  fetch('data/attestati-meta.json').then(function(r){return r.json();}).then(function(meta){
+    return Promise.all(meta.map(function(it){
+      return fetch('data/attestati/'+it.slug+'.b64').then(function(r){return r.text();}).then(function(b64){
+        it.img=b64.trim(); return it;
+      });
+    }));
+  }).then(function(items){
+    grid.innerHTML=items.map(function(it){
+      var src='data:image/webp;base64,'+it.img;
+      var alt=it.title+' – attestato di formazione di Agne Bejeryte, '+it.date;
+      return '<article class="att-card" data-full="'+src+'"><button type="button" class="att-open" aria-label="Apri '+esc(it.title)+'"><img src="'+src+'" alt="'+esc(alt)+'" width="420" height="297" loading="lazy"><span class="att-meta"><strong>'+esc(it.title)+'</strong><em>'+esc(it.date)+'</em></span></button></article>';
+    }).join('');
+  }).catch(function(e){ console.error(e); grid.innerHTML='<p>Impossibile caricare gli attestati.</p>'; });
   var lb=document.getElementById('lightbox');
   var img=lb.querySelector('img');
   var cap=lb.querySelector('.lb-cap');
