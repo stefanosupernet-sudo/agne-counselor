@@ -66,6 +66,14 @@ details.faq-item summary{cursor:pointer;padding:16px 18px;font-weight:700;list-s
 .fab-opts a{display:flex;align-items:center;gap:10px;background:#fff;color:#1d2342;text-decoration:none;font-weight:700;font-size:.9rem;padding:12px 16px;border-radius:999px;box-shadow:0 6px 20px rgba(0,0,0,.15)}
 .fab-main{width:58px;height:58px;border-radius:50%;border:none;background:#34428f;color:#fff;cursor:pointer;box-shadow:0 8px 24px rgba(52,66,143,.4);font-size:1.4rem}
 .fab-wrap.open .fab-main{background:#3a7529}
+.reviews-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;margin-top:28px}
+.review-card{background:var(--bg);border:1px solid var(--line);border-radius:18px;padding:24px;text-align:left}
+.review-card .stars{color:#f5a623;letter-spacing:2px;font-size:1.1rem;margin-bottom:8px}
+.review-card .who{font-weight:700;margin-top:12px;font-size:.95rem}
+.review-card .src{font-size:.8rem;color:var(--muted)}
+.reviews-cta{text-align:center;margin-top:28px}
+.reviews-cta a.btn-outline{display:inline-block;border:2px solid var(--indigo);color:var(--indigo);background:transparent;text-decoration:none;font-weight:700;padding:12px 22px;border-radius:999px}
+.reviews-cta a.btn-outline:hover{background:var(--indigo);color:#fff}
 </style>
 </head>
 <body id="top">
@@ -76,6 +84,7 @@ details.faq-item summary{cursor:pointer;padding:16px 18px;font-weight:700;list-s
 <a href="#aiuto">Nutrizionista o coach</a>
 <a href="#metodo">Il metodo</a>
 <a href="#percorso">Il percorso</a>
+<a href="#recensioni">Dicono di noi</a>
 <a href="faq.html">FAQ</a>
 <a class="btn" href="https://wa.me/393463934678?text=Ciao%2C%20vorrei%20una%20prima%20conversazione%20gratuita" target="_blank" rel="noopener">Prima conversazione gratuita</a>
 </nav></div></header>
@@ -123,6 +132,25 @@ details.faq-item summary{cursor:pointer;padding:16px 18px;font-weight:700;list-s
 <li><h3>Comprendere la situazione</h3><p>Abitudini, difficoltà e obiettivi.</p></li>
 <li><h3>Incontri di lavoro</h3><p>Strategie pratiche adattate a te, senza diete prescritte.</p></li>
 </ol></div></section>
+
+<section id="recensioni" class="band" aria-labelledby="recensioni-title">
+<div class="wrap">
+<h2 id="recensioni-title">Dicono di noi</h2>
+<p>Le esperienze di chi ha intrapreso un percorso di coaching nutrizionale. Le recensioni sono pubblicate su Google e si aggiornano dalla scheda attività.</p>
+<div class="reviews-grid" id="google-reviews-list">
+<article class="review-card">
+  <div class="stars" aria-label="Recensioni Google">★★★★★</div>
+  <p>Le recensioni verificate dei clienti sono disponibili sulla scheda Google della coach Agne Bejeryte.</p>
+  <p class="who">Clienti su Google</p>
+  <p class="src">Google · scheda ufficiale</p>
+</article>
+</div>
+<div class="reviews-cta">
+  <a class="btn-outline" href="https://share.google/RuZa6PPey8LnXqH3u" target="_blank" rel="noopener noreferrer">Leggi e lascia una recensione su Google</a>
+</div>
+</div>
+</section>
+
 <section id="faq-home" class="band"><div class="wrap">
 <h2>Domande frequenti</h2>
 <details class="faq-item"><summary>Che differenza c'è tra nutrizionista e coach?</summary><div style="padding:0 18px 16px"><p>Il nutrizionista può prescrivere diete. Il coach lavora sui comportamenti. Non sostituisce il sanitario.</p></div></details>
