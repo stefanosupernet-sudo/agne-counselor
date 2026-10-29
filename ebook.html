@@ -68,7 +68,20 @@ nav{display:flex;gap:14px;align-items:center;flex-wrap:wrap}
 nav a{text-decoration:none;font-weight:600;font-size:.88rem;color:var(--muted)}
 nav a:hover{color:var(--indigo)}
 nav .btn{padding:10px 16px;color:#fff;font-size:.88rem}
-@media(max-width:960px){nav a:not(.btn){display:none}}
+.menu-toggle{display:none;background:none;border:none;cursor:pointer;padding:10px;z-index:45}
+.menu-toggle span{display:block;width:22px;height:2px;background:var(--ink);margin:5px 0;border-radius:1px;transition:transform .2s,opacity .2s}
+.menu-toggle[aria-expanded="true"] span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.menu-toggle[aria-expanded="true"] span:nth-child(2){opacity:0}
+.menu-toggle[aria-expanded="true"] span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+@media(max-width:900px){
+  .menu-toggle{display:block}
+  header .wrap{position:relative}
+  nav.main-nav{display:none;position:absolute;left:0;right:0;top:100%;background:var(--surface,#fff);border-bottom:1px solid var(--line);flex-direction:column;align-items:stretch;padding:12px 22px 20px;gap:4px;box-shadow:0 12px 28px rgba(29,35,66,.1);z-index:42}
+  nav.main-nav.open{display:flex}
+  nav.main-nav a{display:block!important;padding:12px 8px;font-size:1rem;color:var(--ink);border-bottom:1px solid var(--line);text-decoration:none;font-weight:600}
+  nav.main-nav a:last-of-type,nav.main-nav a.btn{border-bottom:0}
+  nav.main-nav a.btn{margin-top:10px;text-align:center;color:#fff!important;padding:12px 16px}
+}
 
 .page-hero{
   padding:48px 0 28px;
@@ -176,7 +189,8 @@ footer a{color:var(--indigo);font-weight:600;text-decoration:none}
     <a href="https://stefanosupernet-sudo.github.io/agne-counselor/" aria-label="Torna alla home">
       <img class="logo" src="img/logo%20web%20nuovo.png" alt="Logo Agne Bejeryte – Coach Nutrizionale" width="120" height="40">
     </a>
-    <nav aria-label="Principale">
+    <button class="menu-toggle" type="button" aria-label="Apri menu" aria-expanded="false" aria-controls="main-nav"><span></span><span></span><span></span></button>
+    <nav class="main-nav" id="main-nav" aria-label="Principale">
       <a href="https://stefanosupernet-sudo.github.io/agne-counselor/">Home</a>
       <a href="coaching.html">Coaching</a>
       <a href="metodo-mcs.html">Metodo MCS</a>
@@ -207,7 +221,7 @@ footer a{color:var(--indigo);font-weight:600;text-decoration:none}
       <p>Acquista l'eBook su Amazon</p>
       <a class="btn-amazon" href="https://amzn.eu/d/04YHhiab" target="_blank" rel="noopener noreferrer" title="Apri la pagina Amazon dell'eBook">
         <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14H9V8h2v8zm4 0h-2V8h2v8z"/></svg>
-        Vai su Amazon e acquista
+        Acquista su Amazon
       </a>
       <p class="cta-note">Cliccando il pulsante verrai reindirizzato su Amazon, dove potrai completare l'acquisto in sicurezza.</p>
     </div>
@@ -254,7 +268,7 @@ footer a{color:var(--indigo);font-weight:600;text-decoration:none}
       <h2>Acquista l'eBook su Amazon</h2>
       <p>Procedendo al link entrerai sulla pagina Amazon del libro, dove potrai acquistarlo in formato digitale in modo sicuro.</p>
       <a class="btn-amazon" href="https://amzn.eu/d/04YHhiab" target="_blank" rel="noopener noreferrer" title="Apri la pagina Amazon dell'eBook Il peso è un linguaggio">
-        Vai su Amazon e acquista l'eBook
+        Acquista su Amazon
       </a>
       <p class="cta-note">Link affiliato / pagina prodotto Amazon · Pagamento gestito interamente da Amazon</p>
     </div>
@@ -281,5 +295,33 @@ footer a{color:var(--indigo);font-weight:600;text-decoration:none}
 <div class="fab-wrap">
   <a class="fab-main" href="https://wa.me/393463934678?text=Ciao%2C%20vorrei%20una%20prima%20conversazione%20gratuita" target="_blank" rel="noopener" aria-label="Scrivi su WhatsApp" style="display:grid;place-items:center;text-decoration:none">💬</a>
 </div>
+
+<script>
+(function(){
+  var btn=document.querySelector('.menu-toggle');
+  var nav=document.getElementById('main-nav')||document.querySelector('nav.main-nav');
+  if(!btn||!nav)return;
+  btn.addEventListener('click',function(e){
+    e.stopPropagation();
+    var open=nav.classList.toggle('open');
+    btn.setAttribute('aria-expanded',open?'true':'false');
+    btn.setAttribute('aria-label',open?'Chiudi menu':'Apri menu');
+  });
+  document.addEventListener('click',function(e){
+    if(!nav.contains(e.target)&&!btn.contains(e.target)){
+      nav.classList.remove('open');
+      btn.setAttribute('aria-expanded','false');
+      btn.setAttribute('aria-label','Apri menu');
+    }
+  });
+  nav.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click',function(){
+      nav.classList.remove('open');
+      btn.setAttribute('aria-expanded','false');
+      btn.setAttribute('aria-label','Apri menu');
+    });
+  });
+})();
+</script>
 </body>
 </html>
