@@ -1,114 +1,280 @@
 <!DOCTYPE html>
-<html lang="it">
+<html lang="it" class="js">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Che cos’è il coaching nutrizionale | Agne Bejeryte – Metodo MCS</title>
-<meta name="description" content="Coaching nutrizionale per cambiare i comportamenti alimentari: motivazione, consapevolezza e strategie. Non è una dieta.">
+<title>Coaching nutrizionale online: fame emotiva e costanza | Agne Bejeryte</title>
+<meta name="description" content="Coaching nutrizionale online per fame emotiva, sgarri e costanza nelle abitudini: un percorso per cambiare il modo di mangiare, senza diete rigide. Prima conversazione gratuita.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://stefanosupernet-sudo.github.io/agne-counselor/coaching.html">
+<meta property="og:title" content="Coaching nutrizionale online: fame emotiva e costanza | Agne Bejeryte">
+<meta property="og:description" content="Coaching nutrizionale online per fame emotiva, sgarri e costanza nelle abitudini: un percorso per cambiare il modo di mangiare, senza diete rigide. Prima conversazione gratuita.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="it_IT">
+<meta property="og:url" content="https://stefanosupernet-sudo.github.io/agne-counselor/coaching.html">
+<meta property="og:image" content="https://stefanosupernet-sudo.github.io/agne-counselor/img/foto-agne.jpg">
+<meta name="geo.region" content="IT">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css">
+<style>
+
+:root{--bg:#fbfaf6;--surface:#fff;--ink:#1d2342;--muted:#555c78;--indigo:#34428f;--green:#5f9a45;--green-d:#3e7a2c;--tint:#eceffa;--sage:#e8f3e1;--peach:#fde6d8;--line:#e2e1da;--navy:#222c6b;--head:'Montserrat',system-ui,sans-serif;--body:'Open Sans',system-ui,sans-serif}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:calc(env(safe-area-inset-top,0px)+76px)}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1.04rem/1.7 var(--body)}
+img{max-width:100%;display:block;height:auto}
+h1,h2,h3{font-family:var(--head);font-weight:700;line-height:1.2;margin:0 0 .6em;letter-spacing:-.02em}
+h1{font-size:clamp(1.7rem,4.5vw,2.6rem)}
+h2{font-size:clamp(1.35rem,3vw,1.9rem);text-align:center}
+h3{font-size:1.12rem}
+p{margin:0 0 1em;max-width:64ch}
+.wrap{max-width:1080px;margin:0 auto;padding:0 22px}
+section{padding:64px 0}
+section .wrap>p{margin-inline:auto;text-align:center}
+.btn{display:inline-block;background:#34428f;color:#fff;text-decoration:none;font-weight:700;padding:14px 24px;border-radius:999px;transition:transform .15s,background .15s}
+.btn:hover{transform:translateY(-2px);background:#26327a}
+.btn.alt{background:transparent;color:var(--ink);border:2px solid var(--green)}
+.btn.alt:hover{background:var(--sage)}
+.btn.ghost{background:transparent;border:2px solid #fff;color:#fff}
+.btn.ghost:hover{background:rgba(255,255,255,.15)}
+.bar{position:fixed;top:env(safe-area-inset-top,0px);left:0;right:0;height:4px;z-index:60;background:linear-gradient(90deg,var(--green),var(--indigo));transform-origin:0 50%;transform:scaleX(0)}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:40;background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;height:68px;position:relative}
+.logo{height:40px;width:auto;object-fit:contain}
+nav.main-nav{display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+nav.main-nav a{text-decoration:none;font-weight:600;font-size:.85rem;color:var(--muted)}
+nav.main-nav a:hover{color:var(--indigo)}
+nav.main-nav .btn{padding:10px 14px;color:#fff;font-size:.85rem}
+.menu-toggle{display:none;background:none;border:none;cursor:pointer;padding:10px;z-index:45}
+.menu-toggle span{display:block;width:22px;height:2px;background:var(--ink);margin:5px 0;border-radius:1px;transition:transform .2s,opacity .2s}
+.menu-toggle[aria-expanded="true"] span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.menu-toggle[aria-expanded="true"] span:nth-child(2){opacity:0}
+.menu-toggle[aria-expanded="true"] span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+@media(max-width:960px){
+  .menu-toggle{display:block}
+  nav.main-nav{display:none;position:absolute;left:0;right:0;top:100%;background:var(--surface);border-bottom:1px solid var(--line);flex-direction:column;align-items:stretch;padding:12px 22px 20px;gap:4px;box-shadow:0 12px 28px rgba(29,35,66,.1);z-index:42}
+  nav.main-nav.open{display:flex}
+  nav.main-nav a{display:block!important;padding:12px 8px;font-size:1rem;color:var(--ink);border-bottom:1px solid var(--line)}
+  nav.main-nav a.btn{margin-top:10px;text-align:center;color:#fff!important;border:0}
+}
+.hero{padding:44px 0 72px;background:linear-gradient(165deg,var(--tint),var(--bg) 70%)}
+.hero .wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:40px;align-items:center}
+.hero h1{margin-bottom:.4em;text-align:left}
+.sub{font:600 1.08rem/1.5 var(--head);color:var(--green-d);max-width:44ch;margin:0 0 16px}
+.chips{list-style:none;display:flex;flex-wrap:wrap;gap:8px;padding:0;margin:0 0 20px}
+.chips li{background:var(--peach);font-weight:600;font-size:.88rem;padding:7px 14px;border-radius:999px}
+.ctas{display:flex;flex-wrap:wrap;gap:12px;margin-top:20px}
+.photo{position:relative;border-radius:22px;aspect-ratio:4/5;max-width:340px;margin:0 auto;isolation:isolate}
+.photo::before{content:"";position:absolute;inset:14px -14px -14px 14px;border-radius:22px;background:var(--green);z-index:-1}
+.photo img{width:100%;height:100%;border-radius:22px;object-fit:cover;object-position:50% 15%}
+@media(max-width:820px){.hero .wrap{grid-template-columns:1fr}.hero h1,.sub{text-align:center}.ctas{justify-content:center}.chips{justify-content:center}.photo{max-width:260px}}
+.band{background:var(--surface);border-block:1px solid var(--line)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;margin-top:28px}
+.card{background:var(--bg);border:1px solid var(--line);border-radius:18px;padding:22px}
+.card h3{margin-bottom:.4em}
+.card p{margin:0;color:var(--muted);max-width:none;text-align:left}
+.grid .card:nth-child(odd){border-top:4px solid var(--green)}
+.grid .card:nth-child(even){border-top:4px solid var(--indigo)}
+.statement{background:var(--navy);color:#fff}
+.statement h2{color:#fff}
+.statement p{color:#dfe4f8}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:28px}
+@media(max-width:720px){.two{grid-template-columns:1fr}}
+.two .card{background:var(--surface);padding:24px}
+.two .card p{color:var(--ink)}
+.mcs{display:grid;gap:16px;margin-top:28px}
+.mcs article{display:grid;grid-template-columns:70px 1fr;gap:18px;background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:24px}
+.letter{width:56px;height:56px;border-radius:14px;display:grid;place-items:center;font:700 1.7rem var(--head);color:#fff;background:var(--indigo)}
+.mcs article:nth-child(2) .letter{background:var(--green-d)}
+.mcs article:nth-child(3) .letter{background:#e07a4f}
+@media(max-width:560px){.mcs article{grid-template-columns:1fr}}
+.contact{background:#3a7529;color:#fff;border-radius:28px;padding:48px 28px;text-align:center}
+.contact h2{color:#fff}
+.contact p{margin:0 auto 1.1em;color:#eaf5e4;max-width:36em}
+.contact .btn{background:#fff;color:#2d5e20}
+.contact .row{display:flex;flex-wrap:wrap;gap:12px;justify-content:center}
+.note{font-size:.9rem;color:var(--muted);border-top:1px solid var(--line);margin-top:36px;padding-top:18px}
+.note p{max-width:80ch;margin-inline:auto;text-align:left!important}
+.hl{background:var(--sage);border-radius:18px;padding:22px 26px;font-weight:600;margin:24px 0}
+.hl p{margin:0;max-width:none;text-align:left!important}
+.faq details{background:var(--surface);border:1px solid var(--line);border-radius:14px;margin:10px 0;padding:0}
+.faq summary{cursor:pointer;padding:14px 18px;font-weight:700;font-family:var(--head);list-style:none}
+.faq summary::-webkit-details-marker{display:none}
+.faq details[open] summary{border-bottom:1px solid var(--line)}
+.faq details p{padding:12px 18px 16px;margin:0;color:var(--muted);max-width:none;text-align:left}
+/* timeline percorso */
+.tlx{position:relative;max-width:720px;margin:36px auto 0;padding-left:28px}
+.tlx .fill{position:absolute;left:11px;top:20px;width:4px;background:linear-gradient(var(--green),var(--indigo));border-radius:4px;height:0}
+.tlx::before{content:"";position:absolute;left:11px;top:20px;bottom:20px;width:4px;background:var(--line);border-radius:4px}
+.st{position:relative;display:grid;grid-template-columns:48px 1fr;gap:16px;margin-bottom:28px}
+.st .n{width:42px;height:42px;border-radius:50%;background:var(--indigo);color:#fff;font:700 1.05rem var(--head);display:grid;place-items:center;position:relative;z-index:1}
+.st .c{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:18px 20px}
+.st .c h3{margin-bottom:.3em}
+.st .c p{margin:0;color:var(--muted);max-width:none;text-align:left}
+.st .row{display:flex;flex-wrap:wrap;gap:10px;margin-top:12px}
+.st .row a{font-weight:700;color:var(--indigo);text-decoration:none}
+/* venn mcs */
+.venn{position:relative;width:min(100%,300px);aspect-ratio:1;margin:0 auto}
+.venn i{position:absolute;width:58%;aspect-ratio:1;border-radius:50%;display:grid;font:700 2.2rem var(--head);font-style:normal;color:#fff}
+.venn i:nth-child(1){left:21%;top:0;background:rgba(52,66,143,.9);place-items:start center;padding-top:18%}
+.venn i:nth-child(2){left:0;bottom:0;background:rgba(95,154,69,.9);place-items:end start;padding:0 0 18% 18%}
+.venn i:nth-child(3){right:0;bottom:0;background:rgba(224,122,79,.9);place-items:end end;padding:0 18% 18% 0}
+footer{padding:26px 0 34px;border-top:1px solid var(--line);color:var(--muted);font-size:.9rem}
+footer .wrap{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px}
+footer .logo{height:30px}
+footer a{color:var(--indigo);font-weight:600;text-decoration:none}
+html.js .rv{opacity:0;transform:translateY(22px);transition:opacity .65s ease,transform .65s ease}
+html.js .rv.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){html.js .rv{opacity:1;transform:none;transition:none}.bar{display:none}}
+
+</style>
 </head>
 <body>
+<div class="bar" aria-hidden="true"></div>
 <header>
 <div class="wrap">
-<a href="https://stefanosupernet-sudo.github.io/agne-counselor/" aria-label="Home"><img class="logo" src="img/logo.svg" alt="Agne Bejeryte"></a>
-<button class="menu-toggle" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
-<nav class="main-nav" aria-label="Principale">
+<a href="https://stefanosupernet-sudo.github.io/agne-counselor/" aria-label="Home"><img class="logo" src="img/logo%20web%20nuovo.png" alt="Agne Bejeryte – Coach Nutrizionale" width="120" height="40"></a>
+<button class="menu-toggle" type="button" aria-label="Apri menu" aria-expanded="false" aria-controls="main-nav"><span></span><span></span><span></span></button>
+<nav class="main-nav" id="main-nav" aria-label="Principale">
 <a href="https://stefanosupernet-sudo.github.io/agne-counselor/">Home</a>
-<a href="coaching.html">Coaching</a>
+<a href="coaching.html">Coaching nutrizionale</a>
 <a href="metodo-mcs.html">Metodo MCS</a>
-<a href="percorso.html">Il percorso</a>
-<a href="attestati.html">Attestati</a>
+<a href="percorso.html">Come funziona</a>
+<a href="attestati.html">Chi sono</a>
 <a href="ebook.html">eBook</a>
 <a href="faq.html">FAQ</a>
 <a class="btn" href="https://wa.me/393463934678?text=Ciao%2C%20vorrei%20una%20prima%20conversazione%20gratuita" target="_blank" rel="noopener">Prima conversazione gratuita</a>
 </nav>
 </div>
 </header>
+<main id="top">
 
-<main>
-<section class="page-hero">
-<div class="wrap">
-<p class="breadcrumb"><a href="https://stefanosupernet-sudo.github.io/agne-counselor/">Home</a> · Coaching nutrizionale</p>
-<h1>Che cos’è il coaching nutrizionale</h1>
-<p>Un percorso dedicato al cambiamento dei comportamenti alimentari, non alla semplice consegna di una lista di alimenti.</p>
+<section class="hero"><div class="wrap">
+<div>
+<h1>Coaching nutrizionale online per fame emotiva e costanza nelle abitudini</h1>
+<p class="sub">Un percorso dedicato al cambiamento dei comportamenti alimentari, non alla semplice consegna di una lista di alimenti.</p>
+<ul class="chips"><li>Fame emotiva</li><li>Fame nervosa</li><li>Mangiare per stress</li><li>Sgarri e sensi di colpa</li><li>Costanza</li></ul>
+<div class="ctas"><a class="btn" href="https://wa.me/393463934678?text=Ciao%2C%20vorrei%20una%20prima%20conversazione%20gratuita">Prenota una conversazione gratuita</a><a class="btn alt" href="#quando">Mi riconosco?</a></div>
 </div>
-</section>
-<section>
-<div class="wrap prose">
-<p>Il coaching nutrizionale è un percorso per chi desidera modificare le proprie abitudini alimentari, ma incontra difficoltà a tradurre le intenzioni in comportamenti concreti e a mantenerli nel tempo.</p>
-<p>Spesso sappiamo già, almeno in parte, cosa vorremmo fare. Eppure nella vita quotidiana intervengono automatismi, emozioni, situazioni stressanti o difficoltà che ci portano a comportarci diversamente da come avevamo deciso.</p>
-<p>Il coaching si concentra su questo passaggio: <strong>comprendere cosa ostacola il cambiamento</strong> e sviluppare modalità alternative di affrontare le proprie abitudini. Non si tratta solo di ricevere consigli o di “trovare la motivazione” per iniziare una nuova dieta. Si tratta di acquisire maggiore comprensione del proprio comportamento e di sperimentare strategie utilizzabili nella vita di tutti i giorni.</p>
-</div>
-</section>
-<section class="band">
-<div class="wrap">
-<h2>Quando può essere utile</h2>
+<div class="photo"><img src="img/foto-agne.jpg" alt="Agne Bejeryte, coach nutrizionale, alla scrivania"></div>
+</div></section>
+
+<section class="band" id="cos-e"><div class="wrap">
+<h2 class="rv">Che cos’è il coaching nutrizionale?</h2>
+<p class="sub">Un percorso dedicato al cambiamento dei comportamenti alimentari, non alla semplice consegna di una lista di alimenti.</p>
+<p class="rv">Il coaching nutrizionale è un percorso per chi desidera modificare le proprie abitudini alimentari, ma incontra difficoltà a tradurre le intenzioni in comportamenti concreti e a mantenerli nel tempo.</p>
+<p class="rv">Spesso sappiamo già, almeno in parte, cosa vorremmo fare. Eppure nella vita quotidiana intervengono automatismi, emozioni, situazioni stressanti o difficoltà che ci portano a comportarci diversamente da come avevamo deciso.</p>
+<div class="hl rv"><p>Il coaching si concentra su questo passaggio: comprendere cosa ostacola il cambiamento e sviluppare modalità alternative di affrontare le proprie abitudini. Non si tratta solo di ricevere consigli o di «trovare la motivazione» per iniziare una nuova dieta. Si tratta di acquisire maggiore comprensione del proprio comportamento e di sperimentare strategie utilizzabili nella vita di tutti i giorni.</p></div>
+</div></section>
+
+<section id="quando"><div class="wrap">
+<h2 class="rv">Quando può essere utile</h2>
 <p>Il percorso può aiutare se ti riconosci in situazioni come queste.</p>
-<div class="grid">
-<article class="card"><h3>Fame emotiva</h3><p>Mangi anche quando non hai fame fisica, soprattutto in momenti di stress, noia o disagio.</p></article>
-<article class="card"><h3>Abitudini che tornano</h3><p>Dopo periodi di impegno, le vecchie abitudini riemergono e hai la sensazione di dover ripartire da zero.</p></article>
-<article class="card"><h3>Sensi di colpa</h3><p>Uno “sgarro” basta a farti sentire in errore e a compromettere il resto della giornata o della settimana.</p></article>
-<article class="card"><h3>Motivazione che cala</h3><p>Parti motivato, ma nella quotidianità fai fatica a mantenere i cambiamenti nel tempo.</p></article>
-<article class="card"><h3>Difficoltà concrete</h3><p>Stanchezza, poco tempo e imprevisti mettono alla prova i propositi, anche quando sai cosa sarebbe meglio fare.</p></article>
-<article class="card"><h3>Voglia di autonomia</h3><p>Cerchi strumenti per gestire da sola o da solo le situazioni difficili, non solo regole da seguire.</p></article>
+<div class="grid stag" style="grid-template-columns:repeat(auto-fit,minmax(300px,1fr))">
+<div class="card"><h3>Fame emotiva</h3><p>Mangi anche quando non hai fame fisica, soprattutto in momenti di stress, noia o disagio.</p></div>
+<div class="card"><h3>Abitudini che tornano</h3><p>Dopo periodi di impegno, le vecchie abitudini riemergono e hai la sensazione di dover ripartire da zero.</p></div>
+<div class="card"><h3>Sensi di colpa</h3><p>Uno «sgarro» basta a farti sentire in errore e a compromettere il resto della giornata o della settimana.</p></div>
+<div class="card"><h3>Motivazione che cala</h3><p>Parti motivato, ma nella quotidianità fai fatica a mantenere i cambiamenti nel tempo.</p></div>
+<div class="card"><h3>Difficoltà concrete</h3><p>Stanchezza, poco tempo e imprevisti mettono alla prova i propositi, anche quando sai cosa sarebbe meglio fare.</p></div>
+<div class="card"><h3>Voglia di autonomia</h3><p>Cerchi strumenti per gestire da sola o da solo le situazioni difficili, non solo regole da seguire.</p></div>
 </div>
-<p class="lead2" style="text-align:center;margin-top:28px">Se ti riconosci, non significa che ti manchi la volontà. Potrebbero esserci abitudini, emozioni e ostacoli da imparare a gestire in modo diverso.</p>
-<p style="text-align:center;margin-top:20px"><a class="btn" href="percorso.html#contatti">Prenota una conversazione gratuita</a></p>
-</div>
-</section>
-</main>
+<p class="lead2 rv">Se ti riconosci, non significa che ti manchi la volontà. Potrebbero esserci abitudini, emozioni e ostacoli da imparare a gestire in modo diverso.</p>
+</div></section>
 
-<footer>
-<div class="wrap footer-grid">
-  <div>
-    <a href="https://stefanosupernet-sudo.github.io/agne-counselor/"><img class="logo" src="img/logo.svg" alt="Agne Bejeryte"></a>
-    <p style="margin-top:12px;font-size:.9rem">Coaching nutrizionale · Metodo MCS<br>Motivazione, Consapevolezza, Strategie.</p>
-  </div>
-  <div>
-    <h4>Pagine</h4>
-    <ul>
-      <li><a href="coaching.html">Coaching nutrizionale</a></li>
-      <li><a href="metodo-mcs.html">Metodo MCS</a></li>
-      <li><a href="percorso.html">Come funziona</a></li>
-      <li><a href="attestati.html">Attestati e formazione</a></li>
-      <li><a href="ebook.html">eBook – Il peso è un linguaggio</a></li>
-      <li><a href="faq.html">FAQ complete</a></li>
-    </ul>
-  </div>
-  <div>
-    <h4>Contatti</h4>
-    <ul>
-      <li><a href="tel:+393463934678">+39 346 393 4678</a></li>
-      <li><a href="https://wa.me/393463934678" target="_blank" rel="noopener">WhatsApp</a></li>
-      <li><a href="percorso.html#contatti">Colloquio gratuito</a></li>
-    </ul>
-  </div>
+<section class="band" id="fame"><div class="wrap">
+<h2 class="rv">Fame emotiva e fame nervosa: come riconoscerle</h2>
+<p>Quando si parla di fame nervosa si indica spesso la stessa esperienza: mangiare per scaricare tensione, stress o disagio, più che per un bisogno del corpo. Ecco alcune differenze che di solito aiutano a distinguerle.</p>
+<div class="two stag">
+<div class="card"><h3>Fame fisica</h3><p>Di solito arriva gradualmente, si accompagna a segnali del corpo come lo stomaco che brontola o il calo di energia, e si placa mangiando.</p></div>
+<div class="card"><h3>Fame emotiva o nervosa</h3><p>Spesso arriva all’improvviso, dopo un’emozione o una situazione precisa, si rivolge a cibi specifici e può lasciare un senso di colpa.</p></div>
 </div>
-<div class="wrap" style="padding:16px 0 8px;border-top:1px solid var(--line);margin-top:8px;font-size:.85rem;color:var(--muted)">
-  © 2026 Agne Bejeryte – Coach Nutrizionale · Metodo MCS. Non sostituisce valutazione medica o dietologica.
+<p class="lead2 rv">Riconoscerle non serve a giudicarti: serve a capire che cosa il cibo sta cercando di risolvere in quel momento.</p>
+</div></section>
+
+<section id="costanza"><div class="wrap">
+<h2 class="rv">Perché è così difficile restare costanti con la dieta?</h2>
+<p>Se fai fatica a mantenere un regime alimentare, la causa raramente è la mancanza di impegno. Più spesso entrano in gioco meccanismi che nessuna lista di alimenti può risolvere.</p>
+<div class="grid stag" style="grid-template-columns:repeat(auto-fit,minmax(260px,1fr))">
+<div class="card"><h3>Regole rigide</h3><p>Più le regole sono severe, più ogni piccola eccezione sembra un fallimento.</p></div>
+<div class="card"><h3>Tutto o niente</h3><p>«Ormai ho sgarrato»: un episodio diventa il pretesto per abbandonare tutto, e poi si ricomincia da capo.</p></div>
+<div class="card"><h3>Emozioni senza alternative</h3><p>Se il cibo è l’unico modo per gestire stress e noia, nei momenti difficili è difficile fare diversamente.</p></div>
+<div class="card"><h3>Nessun piano per gli imprevisti</h3><p>Stanchezza, poco tempo e giornate storte arrivano sempre: serve una strategia anche per quelle.</p></div>
+</div>
+</div></section>
+
+<section class="statement" id="come"><div class="wrap">
+<h2 class="rv">Come lavoro: dalla comprensione alla costanza</h2>
+<p class="rv">Nel percorso lavoriamo con il Metodo MCS: <strong>Motivazione</strong> per chiarire perché vuoi cambiare, <strong>Consapevolezza</strong> per riconoscere gli schemi e le situazioni che ti portano a mangiare in modo automatico, <strong>Strategie</strong> per sperimentare alternative concrete nella vita reale.</p>
+<p class="rv">Un passo indietro non è un fallimento: è un’occasione per capire cosa è successo e cosa provare diversamente. L’obiettivo è sviluppare autonomia, anche dopo la fine del percorso. Gli incontri si svolgono online tramite Google Meet.</p>
+<div class="ctas" style="justify-content:center"><a class="btn" style="background:#fff;color:#222c6b" href="https://stefanosupernet-sudo.github.io/agne-counselor/#metodo">Scopri il Metodo MCS</a></div>
+</div></section>
+
+<section id="differenza"><div class="wrap">
+<h2 class="rv">Coach nutrizionale o nutrizionista?</h2>
+<p class="rv">Sono due figure diverse e possono collaborare. Il nutrizionista si occupa della valutazione delle esigenze nutrizionali e delle indicazioni alimentari personalizzate. Il coach nutrizionale lavora su abitudini, comportamenti e difficoltà che ostacolano il cambiamento. Non prescrivo diete personalizzate: per esigenze nutrizionali individuali è importante rivolgersi al professionista sanitario competente.</p>
+</div></section>
+
+<section class="band" id="faq"><div class="wrap">
+<h2 class="rv">Domande frequenti sul coaching nutrizionale</h2>
+<div class="faq">
+<details><summary>Il coaching nutrizionale prevede una dieta?</summary><p>No. Non prescrivo diete personalizzate: lavoro sulle abitudini, sulla motivazione, sulla consapevolezza e sulle strategie. Per indicazioni alimentari personalizzate è importante rivolgersi al nutrizionista o al professionista sanitario competente.</p></details>
+<details><summary>Posso iniziare se mangio per stress, noia o emozioni?</summary><p>Sì, è una delle difficoltà per cui può essere utile il percorso. Lavoriamo per riconoscere le situazioni in cui la fame emotiva si presenta e per sperimentare modi diversi di affrontarle.</p></details>
+<details><summary>E se dopo uno sgarro abbandono tutto?</summary><p>Succede a molte persone. Nel percorso uno sgarro o una ricaduta non sono considerati un fallimento, ma un’occasione per capire che cosa è successo e che cosa provare diversamente.</p></details>
+<details><summary>Come funziona il percorso online?</summary><p>Si parte da una breve conversazione gratuita, per telefono o WhatsApp. Se decidiamo di proseguire, gli incontri si svolgono online tramite Google Meet.</p></details>
+<details><summary>Quanti incontri servono?</summary><p>Non esiste un numero di incontri uguale per tutti: dipende dai tuoi obiettivi, dalle tue esigenze e dal lavoro che desideri svolgere.</p></details>
+<details><summary>Il coaching sostituisce una cura per i disturbi alimentari?</summary><p>No. Non sostituisce una valutazione o un trattamento sanitario o psicologico. In presenza di disturbi del comportamento alimentare o di difficoltà che richiedono competenze specialistiche è importante rivolgersi ai professionisti sanitari competenti.</p></details>
+</div>
+</div></section>
+
+<section id="contatti" style="padding-bottom:40px"><div class="wrap">
+<div class="contact">
+<h2 class="rv">Prenota una conversazione gratuita</h2>
+<p>Una breve chiamata o una conversazione su WhatsApp per conoscerci, capire che cosa stai cercando e valutare insieme se il coaching nutrizionale fa per te.</p>
+<div class="row"><a class="btn" href="https://wa.me/393463934678?text=Ciao%2C%20vorrei%20una%20prima%20conversazione%20gratuita">Scrivi su WhatsApp</a><a class="btn ghost" href="https://stefanosupernet-sudo.github.io/agne-counselor/">Torna alla home</a></div>
+<p style="margin-top:18px"><strong>+39 346 393 4678</strong></p>
+</div>
+<div class="note"><p>Il coaching nutrizionale è orientato alla consapevolezza e al cambiamento dei comportamenti alimentari. Non comprende la prescrizione di diete personalizzate e non sostituisce una valutazione o un trattamento sanitario o psicologico.</p></div>
+</div></section>
+
+</main>
+<footer>
+<div class="wrap">
+<a href="https://stefanosupernet-sudo.github.io/agne-counselor/"><img class="logo" src="img/logo%20web%20nuovo.png" alt="Agne Bejeryte" width="96" height="30"></a>
+<span>Coaching nutrizionale · Metodo MCS · <a href="https://wa.me/393463934678" target="_blank" rel="noopener">+39 346 393 4678</a></span>
 </div>
 </footer>
-<div class="fab-wrap" id="fab">
-  <div class="fab-opts">
-    <a href="tel:+393463934678">📞 Chiama</a>
-    <a href="https://wa.me/393463934678" target="_blank" rel="noopener">💬 WhatsApp</a>
-  </div>
-  <button class="fab-main" type="button" aria-label="Contatti" aria-expanded="false">✉️</button>
-</div>
 <script>
-document.querySelector('.menu-toggle')?.addEventListener('click',function(){
-  const nav=document.querySelector('.main-nav');
-  const open=nav.classList.toggle('open');
-  this.setAttribute('aria-expanded',open);
-});
-const fab=document.getElementById('fab');
-fab?.querySelector('.fab-main')?.addEventListener('click',()=>{
-  const o=fab.classList.toggle('open');
-  fab.querySelector('.fab-main').setAttribute('aria-expanded',o);
-});
+(function(){
+  var btn=document.querySelector('.menu-toggle'), nav=document.getElementById('main-nav');
+  if(btn&&nav){
+    btn.addEventListener('click',function(e){e.stopPropagation();var o=nav.classList.toggle('open');btn.setAttribute('aria-expanded',o?'true':'false');btn.setAttribute('aria-label',o?'Chiudi menu':'Apri menu');});
+    document.addEventListener('click',function(e){if(!nav.contains(e.target)&&!btn.contains(e.target)){nav.classList.remove('open');btn.setAttribute('aria-expanded','false');}});
+    nav.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){nav.classList.remove('open');btn.setAttribute('aria-expanded','false');});});
+  }
+  document.querySelectorAll('.stag>*').forEach(function(e,i){e.classList.add('rv');e.style.transitionDelay=(i%6*90)+'ms'});
+  try{
+    var o=new IntersectionObserver(function(es){es.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');o.unobserve(x.target);}});},{threshold:.12});
+    document.querySelectorAll('.rv').forEach(function(el){o.observe(el);});
+  }catch(e){document.querySelectorAll('.rv').forEach(function(el){el.classList.add('in');});}
+  var bar=document.querySelector('.bar');
+  function sc(){
+    if(!bar)return;
+    var m=document.documentElement.scrollHeight-innerHeight;
+    bar.style.transform='scaleX('+(m>0?Math.min(1,scrollY/m):0)+')';
+  }
+  addEventListener('scroll',sc,{passive:true});sc();
+  // timeline fill if present
+  var tl=document.getElementById('tlx'),fl=document.getElementById('fill');
+  if(tl&&fl){
+    function tlf(){
+      var r=tl.getBoundingClientRect(),p=Math.max(0,Math.min(1,(innerHeight*.65-r.top)/Math.max(r.height-40,1)));
+      fl.style.height=Math.max(0,(r.height-88)*p)+'px';
+    }
+    addEventListener('scroll',tlf,{passive:true});addEventListener('resize',tlf);tlf();
+  }
+})();
 </script>
+
 </body>
 </html>
