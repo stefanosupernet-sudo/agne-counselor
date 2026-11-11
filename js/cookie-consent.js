@@ -128,6 +128,7 @@
       '  #cookie-banner .cb-cat{background:#12152b;border-color:#2e3560}',
       '}'
     ].join('');
+    style.textContent += '#cookie-fab{position:fixed;left:18px;bottom:22px;z-index:99990;width:52px;height:52px;border-radius:50%;border:0;cursor:pointer;background:#34428f;color:#fff;display:grid;place-items:center;box-shadow:0 8px 24px rgba(52,66,143,.4);transition:transform .15s,background .15s;padding:0;line-height:0}#cookie-fab:hover{transform:scale(1.08);background:#26327a}#cookie-fab:focus-visible{outline:3px solid #5f9a45;outline-offset:3px}#cookie-fab svg{width:26px;height:26px;display:block}@media (prefers-color-scheme:dark){#cookie-fab{background:#9fb0f0;color:#12152b}#cookie-fab:hover{background:#b8c4f5}}@media (max-width:480px){#cookie-fab{left:12px;bottom:16px;width:48px;height:48px}#cookie-fab svg{width:24px;height:24px}}';
     document.head.appendChild(style);
 
     var wrap = document.createElement('div');
@@ -207,8 +208,28 @@
     });
   }
 
+
+  function buildFab() {
+    if (document.getElementById('cookie-fab')) return;
+    var btn = document.createElement('button');
+    btn.id = 'cookie-fab';
+    btn.type = 'button';
+    btn.setAttribute('aria-label', 'Gestisci preferenze cookie');
+    btn.title = 'Gestisci cookie';
+    btn.innerHTML = '<svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10c0-.34-.02-.67-.05-1-.33.02-.66.05-1 .05-2.76 0-5-2.24-5-5 0-.34.03-.67.05-1-.33-.03-.66-.05-1-.05zm-2.5 15.5c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zM8 11c-.83 0-1.5-.67-1.5-1.5S7.17 8 8 8s1.5.67 1.5 1.5S8.83 11 8 11zm4.5-3.5c-.83 0-1.5-.67-1.5-1.5S11.67 4.5 12.5 4.5s1.5.67 1.5 1.5-.67 1.5-1.5 1.5zM16 13c-.83 0-1.5-.67-1.5-1.5S15.17 10 16 10s1.5.67 1.5 1.5S16.83 13 16 13z"/></svg>';
+    btn.addEventListener('click', function () {
+      if (window.agneCookieConsent && window.agneCookieConsent.reopen) {
+        window.agneCookieConsent.reopen();
+      } else {
+        showBanner('main');
+      }
+    });
+    document.body.appendChild(btn);
+  }
+
   function init() {
     buildBanner();
+    buildFab();
     var choice = hasChoice();
     if (choice) {
       applyConsent(!!choice.analytics, !!choice.marketing);
