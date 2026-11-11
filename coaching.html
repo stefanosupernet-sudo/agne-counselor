@@ -161,55 +161,118 @@ html.js .rv.in{opacity:1;transform:none}
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://stefanosupernet-sudo.github.io/agne-counselor/coaching.html#webpage",
+      "name": "Coaching nutrizionale online: fame emotiva e costanza",
+      "description": "Coaching nutrizionale online per fame emotiva, sgarri e costanza nelle abitudini alimentari.",
+      "url": "https://stefanosupernet-sudo.github.io/agne-counselor/coaching.html",
+      "isPartOf": {
+        "@id": "https://stefanosupernet-sudo.github.io/agne-counselor/#website"
+      },
+      "about": {
+        "@id": "https://stefanosupernet-sudo.github.io/agne-counselor/#service"
+      },
+      "mainEntity": {
+        "@id": "https://stefanosupernet-sudo.github.io/agne-counselor/#service"
+      }
+    },
+    {
       "@type": "ProfessionalService",
+      "@id": "https://stefanosupernet-sudo.github.io/agne-counselor/#service",
       "name": "Agne Bejeryte – Coaching nutrizionale",
-      "description": "Coaching nutrizionale online con Metodo MCS: fame emotiva, costanza e cambiamento delle abitudini alimentari. Prima conversazione gratuita.",
+      "alternateName": "Coaching nutrizionale Metodo MCS",
+      "description": "Coaching nutrizionale online orientato a fame emotiva, costanza e cambiamento delle abitudini alimentari con il Metodo MCS.",
       "url": "https://stefanosupernet-sudo.github.io/agne-counselor/",
       "image": "https://stefanosupernet-sudo.github.io/agne-counselor/img/foto-agne.jpg",
-      "telephone": "+393463934678",
+      "logo": "https://stefanosupernet-sudo.github.io/agne-counselor/img/logo%20web%20nuovo.png",
+      "telephone": "+39-346-393-4678",
       "priceRange": "€€",
+      "currenciesAccepted": "EUR",
       "areaServed": {
         "@type": "Country",
         "name": "Italia"
       },
       "availableLanguage": [
+        "Italian",
         "it"
       ],
+      "serviceType": "Coaching nutrizionale online",
       "provider": {
-        "@type": "Person",
-        "name": "Agne Bejeryte",
-        "jobTitle": "Coach Nutrizionale"
+        "@id": "https://stefanosupernet-sudo.github.io/agne-counselor/#person"
       },
       "hasOfferCatalog": {
         "@type": "OfferCatalog",
-        "name": "Servizi di coaching nutrizionale",
+        "name": "Servizi",
         "itemListElement": [
           {
             "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Coaching nutrizionale online"
-            }
+            "name": "Prima conversazione gratuita",
+            "url": "https://wa.me/393463934678",
+            "price": "0",
+            "priceCurrency": "EUR"
           },
           {
             "@type": "Offer",
             "itemOffered": {
               "@type": "Service",
-              "name": "Percorso Metodo MCS"
+              "name": "Percorso di coaching nutrizionale online",
+              "description": "Incontri online su Google Meet con focus su motivazione, consapevolezza e strategie."
             }
           },
           {
             "@type": "Offer",
             "itemOffered": {
-              "@type": "Service",
-              "name": "Prima conversazione gratuita"
+              "@type": "Book",
+              "name": "Il peso è un linguaggio",
+              "url": "https://stefanosupernet-sudo.github.io/agne-counselor/ebook.html"
             }
           }
         ]
+      },
+      "potentialAction": {
+        "@type": "CommunicateAction",
+        "name": "Contatto WhatsApp",
+        "target": "https://wa.me/393463934678"
       }
     },
     {
+      "@type": "Person",
+      "@id": "https://stefanosupernet-sudo.github.io/agne-counselor/#person",
+      "name": "Agne Bejeryte",
+      "url": "https://stefanosupernet-sudo.github.io/agne-counselor/",
+      "image": "https://stefanosupernet-sudo.github.io/agne-counselor/img/foto-agne.jpg",
+      "jobTitle": "Coach Nutrizionale",
+      "description": "Coach nutrizionale specializzata in fame emotiva, abitudini alimentari e Metodo MCS (Motivazione, Consapevolezza, Strategie).",
+      "telephone": "+39-346-393-4678",
+      "sameAs": [
+        "https://wa.me/393463934678"
+      ],
+      "knowsAbout": [
+        "Coaching nutrizionale",
+        "Fame emotiva",
+        "Metodo MCS",
+        "Abitudini alimentari",
+        "Consapevolezza alimentare",
+        "Nutrizione psicosomatica"
+      ],
+      "alumniOf": {
+        "@type": "EducationalOrganization",
+        "name": "Università delle Scienze della Salute Psicologiche e Sociali (UniPsi)"
+      },
+      "hasCredential": [
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "Diploma di Consulente in Naturopatia Scientifica"
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "Laurea in Servizio Sociale"
+        }
+      ]
+    },
+    {
       "@type": "BreadcrumbList",
+      "@id": "https://stefanosupernet-sudo.github.io/agne-counselor/coaching.html#breadcrumb",
       "itemListElement": [
         {
           "@type": "ListItem",
