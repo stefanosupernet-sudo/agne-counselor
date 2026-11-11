@@ -8,19 +8,22 @@
   var STORAGE_KEY = 'agne_cookie_consent_v1';
   var POLICY_URL = 'cookie-policy.html';
 
+  // dataLayer + consent default sono già impostati dallo script inline in <head>
   window.dataLayer = window.dataLayer || [];
   function gtag(){ dataLayer.push(arguments); }
   window.gtag = window.gtag || gtag;
-
-  gtag('consent', 'default', {
-    ad_storage: 'denied',
-    ad_user_data: 'denied',
-    ad_personalization: 'denied',
-    analytics_storage: 'denied',
-    functionality_storage: 'granted',
-    security_storage: 'granted',
-    wait_for_update: 500
-  });
+  // Riapplica default solo se non c'era lo script inline (fallback)
+  if (!window.__agneConsentDefault) {
+    gtag('consent', 'default', {
+      ad_storage: 'denied',
+      ad_user_data: 'denied',
+      ad_personalization: 'denied',
+      analytics_storage: 'denied',
+      functionality_storage: 'granted',
+      security_storage: 'granted',
+      wait_for_update: 500
+    });
+  }
 
   function applyConsent(analytics, marketing) {
     gtag('consent', 'update', {
